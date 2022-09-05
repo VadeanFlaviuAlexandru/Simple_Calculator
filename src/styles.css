@@ -1,0 +1,118 @@
+body {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: linear-gradient(#d2c7ff 1px, transparent 1px), linear-gradient(to right, #d2c7ff 1px, #e5e5f7 1px);
+    background-size: 20px 20px;
+}
+
+#dark {
+    background-color: #020211a9;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#dark .calculator-grid>button:hover,
+.calculator-grid>button:focus {
+    background-color: #131352d0;
+}
+
+#light {
+    background-color: #7575eca9;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#light .calculator-grid>button:hover,
+.calculator-grid>button:focus {
+    background-color: #934bf062;
+}
+
+#light .count {
+    background-color: #934bf062;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    bottom: 307px;
+    left: 700px;
+}
+
+#dark .count {
+    background-color: #1313522c;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    bottom: 307px;
+    left: 700px;
+}
+
+.calculator-grid {
+    display: grid;
+    margin-top: 30px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+
+h3 {
+    text-align: center;
+    position: absolute;
+    top: 690px;
+    right: 0px;
+    bottom: 45px;
+    left: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+.Toggle-grid {
+    margin-top: 15em;
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid>button:hover,
+.calculator-grid>button:focus {
+    background-color: #d2c7ff;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: .75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75)
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
