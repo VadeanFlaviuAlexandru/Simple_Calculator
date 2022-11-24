@@ -12,7 +12,7 @@
 
 ## Key Features
 
-* A simple working calculator
+* A simple working calculator in React
 * Has a day and night theme button with nice animation 
 * Used this great nature palette for it:
 
