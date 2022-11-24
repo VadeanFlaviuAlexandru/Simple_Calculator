@@ -12,8 +12,8 @@
 
 ## Key Features
 
-* A simple working calculator in React
-* Has a day and night theme button with nice animation 
+* A simple working calculator in React.
+* Has a day and night theme button with nice animation.
 * Used this great nature palette for it:
 
 ![3](https://user-images.githubusercontent.com/103831098/195432396-49c5a42f-2d8f-492f-b65e-a7a27348d9cf.PNG)
