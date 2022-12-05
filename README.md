@@ -12,6 +12,7 @@
 
 ## Key Features
 
+* <a href="https://heroic-starlight-a9bab8.netlify.app/" target="_blank">Live Demo</a>
 * A simple working calculator.
 * Has a day and night theme button with nice animation.
 * Used this great nature palette for it:
