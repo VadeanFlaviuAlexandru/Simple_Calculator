@@ -142,21 +142,11 @@ function formatOperand(operand) {
 
 function App() {
 
-  // const [Trivia, setTrivia] = useState("")
   const [theme, setTheme] = useState("light")
   const [{ currentOperand, previousOperand, Operation }, dispatch] = useReducer(reducer, {})
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"))
   }
-
-  // useEffect(() => {
-  //   if (currentOperand === 10) {
-  //     setTrivia("Yes!");
-  //   }
-  //   else {
-  //     setTrivia("Nothing");
-  //   }
-  // }, [currentOperand])
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -184,7 +174,6 @@ function App() {
           <DigitButton digit="." dispatch={dispatch} />
           <DigitButton digit="0" dispatch={dispatch} />
           <button className="span-two" onClick={() => dispatch({ type: actionsPossible.equal_ })}>=</button>
-          {/*----------------------------------TOGGLE BTN--------------------------------*/}
           <input type="checkbox" id="toggle_checkbox" onChange={toggleTheme} checked={theme === "dark"} />
           <label htmlFor="toggle_checkbox">
             <div id="star">
@@ -195,12 +184,6 @@ function App() {
           </label>
           <h3>{theme === "light" ? "Light Mode" : "Dark Mode"}</h3>
         </div>
-        {/*----------------------------------TRIVIA--------------------------------*/}
-        {/* <div className="count">
-          <h1>Random Trivia</h1>
-          <h2>(it will randomly pop up the more you use the calculator)</h2>
-          <h4>{Trivia}</h4>
-        </div> */}
       </div>
     </ThemeContext.Provider>
 
