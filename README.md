@@ -1,5 +1,5 @@
 <h1 align="center">
-  Calculator
+  Simple Calculator
   <br>
 </h1>
 
